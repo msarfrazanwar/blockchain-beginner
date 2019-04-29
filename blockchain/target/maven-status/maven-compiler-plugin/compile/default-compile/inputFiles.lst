@@ -1,6 +1,8 @@
 /workspace/blockchain-beginner/blockchain/src/main/java/blockchain/MyChain.java
-/workspace/blockchain-beginner/blockchain/src/main/java/blockchain/Transactions.java
-/workspace/blockchain-beginner/blockchain/src/main/java/blockchain/App.java
 /workspace/blockchain-beginner/blockchain/src/main/java/blockchain/StringUtil.java
+/workspace/blockchain-beginner/blockchain/src/main/java/blockchain/App.java
 /workspace/blockchain-beginner/blockchain/src/main/java/blockchain/Block.java
+/workspace/blockchain-beginner/blockchain/src/main/java/blockchain/TransactionOutput.java
 /workspace/blockchain-beginner/blockchain/src/main/java/blockchain/Wallet.java
+/workspace/blockchain-beginner/blockchain/src/main/java/blockchain/TransactionInput.java
+/workspace/blockchain-beginner/blockchain/src/main/java/blockchain/Transaction.java
