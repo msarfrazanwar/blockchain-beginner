@@ -3,22 +3,22 @@ import java.util.*;
 
 public class Block {
 
-	public String hash;
 	public String previousHash;
+	public String hash;
 	public String merkleRoot;
-	public ArrayList<Transaction> transactions = new ArrayList<Transaction>(); //our data will be a simple message.
-	public long timeStamp; //as number of milliseconds since 1/1/1970.
+	public ArrayList<Transaction> transactions = new ArrayList<Transaction>(); //A Simple message will be our data
+	public long timeStamp; // milliseconds since 1970
 	public int nonce;
 
-	//Block Constructor.
+	// Contructor of the block
 	public Block(String previousHash ) {
 		this.previousHash = previousHash;
 		this.timeStamp = new Date().getTime();
 
-		this.hash = calculateHash(); //Making sure we do this after we set the other values.
+		this.hash = calculateHash(); //After setting the values
 	}
 
-    //Calculate new hash based on blocks contents
+    //Generating a new hash based on data
 	public String calculateHash() {
 		String calculatedhash = StringUtil.applySha256(
 				previousHash +
@@ -40,7 +40,7 @@ public class Block {
 		System.out.println("Block Mined!!! : " + hash);
 	}
 
-    //Add transactions to this block
+    //Add txn to the block
 	public boolean addTransaction(Transaction transaction) {
 		//process transaction and check if valid, unless block is genesis block then ignore.
 		if(transaction == null) return false;
